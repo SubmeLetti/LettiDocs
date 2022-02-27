@@ -1,670 +1,670 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>레티 개인정보 처리방침</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
+	/* cspell:disable-file */
+	/* webkit printing magic: print all background colors */
+	html {
+		-webkit-print-color-adjust: exact;
 	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 3px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
+	* {
+		box-sizing: border-box;
+		-webkit-print-color-adjust: exact;
 	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	text-indent: -1.7em;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-.simple-table {
-	margin-top: 1em;
-	font-size: 0.875rem;
-}
-
-.simple-table-header {
-	background: rgb(247, 246, 243);
-	color: black;
-	font-weight: 500;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-block;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	max-height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1.25em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-	color: rgba(55, 53, 47, 1);
-}
-.highlight-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(145, 145, 142, 1);
-}
-.highlight-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(187, 132, 108, 1);
-}
-.highlight-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(215, 129, 58, 1);
-}
-.highlight-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 148, 51, 1);
-}
-.highlight-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(108, 155, 125, 1);
-}
-.highlight-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(91, 151, 189, 1);
-}
-.highlight-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(167, 130, 195, 1);
-}
-.highlight-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(205, 116, 159, 1);
-}
-.highlight-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(225, 111, 100, 1);
-}
-.highlight-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.highlight-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.highlight-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.highlight-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.highlight-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.highlight-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.highlight-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.highlight-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.highlight-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(145, 145, 142, 1);
-}
-.block-color-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(187, 132, 108, 1);
-}
-.block-color-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(215, 129, 58, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 148, 51, 1);
-}
-.block-color-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(108, 155, 125, 1);
-}
-.block-color-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(91, 151, 189, 1);
-}
-.block-color-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(167, 130, 195, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(205, 116, 159, 1);
-}
-.block-color-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(225, 111, 100, 1);
-}
-.block-color-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.block-color-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.block-color-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.block-color-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.block-color-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.block-color-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.block-color-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
-.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
-.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
-.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
-.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
-.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
-.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
-.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
-.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
-.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
 	
-</style></head><body><article id="a59b092d-c756-43ce-abbb-ce55d9bd8381" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🔒</span></div><h1 class="page-title">레티 개인정보 처리방침</h1><table class="properties"><tbody><tr class="property-row property-row-created_time"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesCreatedAt"><path d="M6.98643729,14.0000972 C5.19579566,14.0000972 3.40419152,13.3106896 2.04245843,11.9323606 C-0.681017475,9.21200555 -0.680780251,4.76029539 2.04293482,2.04012507 C4.76664406,-0.68004331 9.22427509,-0.68004331 11.9480135,2.04013479 C13.272481,3.36277455 14,5.1330091 14,6.99552762 C14,8.87640182 13.2721894,10.6285043 11.9480135,11.9509302 C10.5679344,13.3105924 8.77756503,14.0000972 6.98643729,14.0000972 Z M10.2705296,7.00913883 L10.2705296,8.46099754 L10.2705296,8.65543362 L10.076181,8.65543362 L8.6543739,8.65543362 L5.72059514,8.65543362 L5.52619796,8.65543362 L5.52619796,8.46099754 L5.52619796,5.52541044 L5.52619796,3.37946773 L5.52619796,3.18502193 L5.72059514,3.18502193 L7.17253164,3.18502193 L7.36692883,3.18502193 L7.36692883,3.37946773 L7.36692883,6.81467358 L10.076181,6.81467358 L10.2705296,6.81467358 L10.2705296,7.00913883 Z M12.1601539,6.99552762 C12.1601539,5.61697497 11.6190112,4.32597154 10.6393933,3.34769528 C8.63253764,1.34336744 5.35197452,1.34061603 3.34153136,3.33944106 C3.33868273,3.34219247 3.33607716,3.34494388 3.33322852,3.34769528 C1.32397148,5.35459953 1.32372842,8.63641682 3.33322852,10.6433794 C5.34295224,12.6504489 8.62968901,12.6504489 10.6393933,10.6433794 C11.6190112,9.66506426 12.1601539,8.37408027 12.1601539,6.99552762 Z"></path></svg></span>Created</th><td><time>@January 15, 2022 10:08 PM</time></td></tr><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesMultipleSelect"><path d="M4,3 C4,2.447715 4.447715,2 5,2 L12,2 C12.5523,2 13,2.447716 13,3 C13,3.55228 12.5523,4 12,4 L5,4 C4.447715,4 4,3.55228 4,3 Z M4,7 C4,6.447715 4.447715,6 5,6 L12,6 C12.5523,6 13,6.447716 13,7 C13,7.55228 12.5523,8 12,8 L5,8 C4.447715,8 4,7.55228 4,7 Z M4,11 C4,10.447715 4.447715,10 5,10 L12,10 C12.5523,10 13,10.447716 13,11 C13,11.55228 12.5523,12 12,12 L5,12 C4.447715,12 4,11.55228 4,11 Z M2,4 C1.44771525,4 1,3.55228475 1,3 C1,2.44771525 1.44771525,2 2,2 C2.55228475,2 3,2.44771525 3,3 C3,3.55228475 2.55228475,4 2,4 Z M2,8 C1.44771525,8 1,7.55228475 1,7 C1,6.44771525 1.44771525,6 2,6 C2.55228475,6 3,6.44771525 3,7 C3,7.55228475 2.55228475,8 2,8 Z M2,12 C1.44771525,12 1,11.5522847 1,11 C1,10.4477153 1.44771525,10 2,10 C2.55228475,10 3,10.4477153 3,11 C3,11.5522847 2.55228475,12 2,12 Z"></path></svg></span>Tags</th><td></td></tr></tbody></table></header><div class="page-body"><h2 id="881f2a07-a8d8-410c-ab2c-dc3f781c84e1" class="">&#x27;레티&#x27; 개인정보처리방침</h2><p id="f8bf699e-ca31-483e-a17d-be107125e8d1" class="">
-</p><p id="12aaee68-8172-47c4-a550-abb9185bc7da" class="">&#x27;레티&#x27;(이하 &quot;회사&quot;)는 개인정보 보호법 제30조에 따라 정보주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 개인정보 처리방침을 수립 및 공개합니다. </p><p id="4509e18b-2b09-4170-aa7f-6e0a794a276c" class="">회사가 이용자에게 제공하는 서비스가 수행하는 모든 활동은 정보통신망 이용촉진 및 정보보호(이하 &quot;정보통신망법&quot;), 개인정보보호법, 등 개인정보 보호에 관한 관련 법령 등 국내 관련 법령을 준수하며, 본 개인정보 처리방침을 따릅니다. </p><p id="54ac9d86-21e4-437b-8b58-5c36fb11519e" class="">
-</p><p id="01fa3e10-2117-4834-8de7-e88c70d12596" class=""><strong>제 1조 (개인정보의 수집 항목 및 이용 목적)</strong></p><p id="a131364a-b6a3-45f4-8826-cff0520e01f4" class="">회사는 편리한 서비스를 제공하기 위하여 통신비밀보호법, 전기통신사업법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 정보통신서비스제공자가 준수하여야 할 관련 법령상의 개인정보보호 규적을 준수하며, 관련 법령에 의거한 개인정보취급방침을 정하여 이용자 권익보호에 최선을 다하고 있습니다. 회사에서 수집하고 있는 항목과 이용 목적은 다음과 같습니다. </p><ul id="6688616f-98f2-429b-b4e4-6aa819769008" class="bulleted-list"><li style="list-style-type:disc">서비스 이용을 위해 수집하는 개인정보의 항목<ul id="42592015-3847-49fa-bf21-9c7e054ad2ac" class="bulleted-list"><li style="list-style-type:circle">닉네임, Gmail 주소, 서비스 이용 기록, 접속 로그, 쿠키, 접속 IP 정보</li></ul></li></ul><ul id="20fb7b1d-9cc2-4b30-8084-bf53928021a3" class="bulleted-list"><li style="list-style-type:disc">개인정보 이용 목적<ul id="e4b2dfbf-c9fd-4547-a6cd-d11838b96cee" class="bulleted-list"><li style="list-style-type:circle">서비스 회원 가입 및 관리</li></ul><ul id="1a977042-293a-4273-b7f8-a3abffb9443a" class="bulleted-list"><li style="list-style-type:circle">원활한 이메일 관련 서비스 제공 </li></ul></li></ul><p id="06c09dc2-5540-4b54-901e-be734410543b" class="">
-</p><p id="95f0b9da-b68b-41cb-8ccc-1c8876f6e348" class=""><strong>제 2조 (개인정보의 수집 방법)</strong></p><p id="74ba9ff5-89c7-41b2-be3b-0127b196c027" class="">회사는 원활한 서비스 제공을 위해 모바일 앱을 통해 다음과 같은 방법으로 개인정보를 수집합니다. </p><ul id="5395c2b0-5a92-49ac-ab11-e2d5b2510443" class="bulleted-list"><li style="list-style-type:disc">최초 이용 시 이름(닉네임) 설정 </li></ul><ul id="0b1b0788-9f26-4164-b963-5cf0d393e58b" class="bulleted-list"><li style="list-style-type:disc">회원 가입 시 이메일 연동 </li></ul><p id="d1b98bfa-ec5d-4a7e-a1da-4cb6c6ca8151" class="">
-</p><p id="8e77fb4c-3594-4070-9818-147c4bb35206" class=""><strong>제 3조 (개인정보의 활용) </strong></p><p id="477143a0-4809-4557-a939-ae80b4df6e6c" class="">회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다. </p><ul id="6d42f038-b88e-49d2-adeb-e67b5fefaa6e" class="bulleted-list"><li style="list-style-type:disc">회원제 서비스 이용에 따른 본인확인, 개인 식별, 가입 의사 확인, 불만처리 등 민원처리, 고지사항 전달 </li></ul><p id="1c53ddce-784e-4199-8336-7ebd361b5c48" class="">
-</p><p id="03be1695-301d-4fed-900e-5fcde1e7671b" class=""><strong>제 4조 (개인정보의 보유 및 이용기간) </strong></p><p id="71270119-ad20-4e6b-8438-657dee5a4340" class="">회사는 법령에 따른 개인정보 보유/이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의받은 개인정보 보유/이용기간 내에서 개인정보를 처리/보유합니다. 또한 회원 탈퇴 시 지체 없이 파기합니다. 단, 회원탈퇴 후에도 관계법령의 규정에 의하여 보존할 필요가 있는 경우 법령에 따라 일정기간 회원정보를 보관합니다.</p><ul id="410afbe1-a1b4-40d0-8919-b82a0525ce0e" class="bulleted-list"><li style="list-style-type:disc">ID,비밀번호,이메일,서비스이용기록,접속로그,쿠키,접속IP정보<ul id="d0a3baf6-f54a-473f-be72-7ec1153d8213" class="bulleted-list"><li style="list-style-type:circle">보존 이유 : 전자상거래등에서의 소비자보호에 관한 법률</li></ul><ul id="46def160-c4bf-450b-9215-670628c9df4d" class="bulleted-list"><li style="list-style-type:circle">보존 기간 : 5년</li></ul></li></ul><ul id="60014402-0670-4e52-a34a-b5e899c21259" class="bulleted-list"><li style="list-style-type:disc">소비자의 불만 또는 분쟁처리에 관한 기록<ul id="124c0848-bd7f-426c-a30f-0c6090c26542" class="bulleted-list"><li style="list-style-type:circle">보존 이유 : 전자상거래등에서의 소비자보호에 관한 법률</li></ul><ul id="99ba13a3-8793-4679-a92f-e532c12d658b" class="bulleted-list"><li style="list-style-type:circle">보존 기간 : 3년</li></ul></li></ul><ul id="6d084d18-208b-4195-bd96-7467a2881d40" class="bulleted-list"><li style="list-style-type:disc">방문에 관한 기록<ul id="406239b5-afc6-4734-b830-7e43f6118d4b" class="bulleted-list"><li style="list-style-type:circle">보존 이유 : 통신비밀보호법</li></ul><ul id="e0a9ea52-8bc5-46ff-b820-bbd11f9cd08c" class="bulleted-list"><li style="list-style-type:circle">보존 기간 : 3개월</li></ul></li></ul><p id="94b073ae-ffbf-4f1b-9e3b-2b34c6542bff" class="">
-</p><p id="4fa496f0-54e9-4d46-b941-31a04bc2be5d" class=""><strong>제 5조 (개인정보의 파기절차 및 방법)</strong></p><p id="cfe9f6ad-6966-4a21-a8d7-5c123d050067" class="">회사는 이용자의 개인정보를 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기합니다. 개인정보 파기절차 및 방법은 다음과 같습니다. </p><ol type="1" id="b9d5c478-00d5-456e-8012-8c4f3aa8eba3" class="numbered-list" start="1"><li>파기절차 <ul id="0454a1ed-940c-4557-b034-b548734c7c9a" class="bulleted-list"><li style="list-style-type:disc">이용자가 회원가입 등을 위해 입력하신 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관계법령의 규정에 의하여 보존할 필요가 있는 경우 법령에 따라 일정기간 회원정보를 보관합니다. </li></ul><ul id="644a931f-3dc1-4199-9902-5b1f57c340af" class="bulleted-list"><li style="list-style-type:disc">동 개인정보는 법률에 의한 경우가 아니고서는 보유되는 이외의 다른 목적으로 이용되지 않습니다. </li></ul></li></ol><ol type="1" id="8546f2f8-74fc-4b18-8509-d3d9ad003735" class="numbered-list" start="2"><li>파기방법 </li></ol><ul id="13a5d5fb-52ad-4c19-af79-7f1c55f48eac" class="bulleted-list"><li style="list-style-type:disc">종이에 출력된 개인정보는 분쇄기 또는 이에 준하는 방법으로 소각하여 파기합니다. </li></ul><ul id="1147627a-5142-47e4-9704-7683c65fce80" class="bulleted-list"><li style="list-style-type:disc">전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다. </li></ul><p id="7a06e9cb-d672-453f-b2a9-73a6d0b54fd2" class="">
-</p><p id="56f53b45-1472-4bab-b5a5-7ef6854f91e1" class=""><strong>제 6조 (개인정보관리책임자 및 담당자의 연락처) </strong></p><p id="da3b1a4f-480e-45e5-a254-c710d186394b" class="">회사는 개인정보를 보호하는데 있어 이용자에게 고지한 사항들에 반하여 사고가 발생할 시에 개인정보보호책임자가 모든 책임을 집니다. 그러나, 기술적인 보완조치를 했음에도 불구하고, 해킹 등 기본적인 네트워크 상의 위험성에 의해 발생하는 예기치 못한 사고로 인한 정보의 훼손 및 방문자가 작성한 게시물에 의한 각종 분쟁에 관해서는 책임이 없습니다. </p><p id="a2051c17-5588-4241-938e-21c9cb7e870a" class="">회사는 서비스를 이용하며 발생하는 모든 개인정보보호 관련 민원을 개인정보 관리책임자 혹은 담당부서로 신고하실 수 있습니다. 회사는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다. </p><ul id="5d351b76-b023-4119-92f5-91a4856c6f05" class="bulleted-list"><li style="list-style-type:disc">개인정보 보호책임자<ul id="ee295b87-2115-46f1-a073-665392cbd8d6" class="bulleted-list"><li style="list-style-type:circle">성명: 이은정</li></ul><ul id="64711f7b-6c6a-4af8-820d-2bca54de30a8" class="bulleted-list"><li style="list-style-type:circle">연락처: leeeun0704@gmail.com</li></ul><p id="43f50503-9740-4678-93ad-bc021a3dd4ab" class="">
-</p></li></ul><p id="55730a9a-8edb-4c1b-b348-de7f3b1dfcea" class=""><strong>제7조 (고지의 의무) </strong></p><p id="57ab56ea-7e5d-473e-bc4c-3dbfe1cd25a8" class="">본 방침은 공지한 날로부터 시행되며, 정부나 회사의 정책이 변경됨에 따라 현 개인정보취급방침의 내용 추가, 삭제가 있을 시에는 시행일자 최소 7일전부터 홈페이지를 통해 공고할 것입니다. </p><p id="7307fa5b-70ce-4d9f-9a8e-2e62d5c63d1d" class="">
-</p><p id="0de70eec-5444-4ae9-8c94-ab50fe50efb1" class=""><strong>제 8조 (Google API 서비스 사용자 데이터 정책) </strong></p><p id="9c4e5f98-a336-4299-8d0a-ba1b79a71082" class="">회사는 Google API에서 받은 정보를 사용하는 경우 제한적 사용 요구 사항을 포함하여 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 준수합니다. </p><p id="363f1e4e-d4ee-46ae-a05f-58d2b707c133" class="">
-</p><p id="2dea259c-fa14-4603-b909-d8d92a5a4ccf" class="">
-</p><hr id="cc5330fe-6b99-474c-8895-4a0aca7e4609"/><p id="d20bfe36-fe30-4a93-9c49-09e450210f99" class="">
-</p><p id="84b73077-71c4-439f-95c2-91e846bb0e86" class="">
-</p></div></article></body></html>
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	@media only screen {
+		body {
+			margin: 2em auto;
+			max-width: 900px;
+			color: rgb(55, 53, 47);
+		}
+	}
+	
+	body {
+		line-height: 1.5;
+		white-space: pre-wrap;
+	}
+	
+	a,
+	a.visited {
+		color: inherit;
+		text-decoration: underline;
+	}
+	
+	.pdf-relative-link-path {
+		font-size: 80%;
+		color: #444;
+	}
+	
+	h1,
+	h2,
+	h3 {
+		letter-spacing: -0.01em;
+		line-height: 1.2;
+		font-weight: 600;
+		margin-bottom: 0;
+	}
+	
+	.page-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin-top: 0;
+		margin-bottom: 0.75em;
+	}
+	
+	h1 {
+		font-size: 1.875rem;
+		margin-top: 1.875rem;
+	}
+	
+	h2 {
+		font-size: 1.5rem;
+		margin-top: 1.5rem;
+	}
+	
+	h3 {
+		font-size: 1.25rem;
+		margin-top: 1.25rem;
+	}
+	
+	.source {
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		padding: 1.5em;
+		word-break: break-all;
+	}
+	
+	.callout {
+		border-radius: 3px;
+		padding: 1rem;
+	}
+	
+	figure {
+		margin: 1.25em 0;
+		page-break-inside: avoid;
+	}
+	
+	figcaption {
+		opacity: 0.5;
+		font-size: 85%;
+		margin-top: 0.5em;
+	}
+	
+	mark {
+		background-color: transparent;
+	}
+	
+	.indented {
+		padding-left: 1.5em;
+	}
+	
+	hr {
+		background: transparent;
+		display: block;
+		width: 100%;
+		height: 1px;
+		visibility: visible;
+		border: none;
+		border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+	}
+	
+	img {
+		max-width: 100%;
+	}
+	
+	@media only print {
+		img {
+			max-height: 100vh;
+			object-fit: contain;
+		}
+	}
+	
+	@page {
+		margin: 1in;
+	}
+	
+	.collection-content {
+		font-size: 0.875rem;
+	}
+	
+	.column-list {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.column {
+		padding: 0 1em;
+	}
+	
+	.column:first-child {
+		padding-left: 0;
+	}
+	
+	.column:last-child {
+		padding-right: 0;
+	}
+	
+	.table_of_contents-item {
+		display: block;
+		font-size: 0.875rem;
+		line-height: 1.3;
+		padding: 0.125rem;
+	}
+	
+	.table_of_contents-indent-1 {
+		margin-left: 1.5rem;
+	}
+	
+	.table_of_contents-indent-2 {
+		margin-left: 3rem;
+	}
+	
+	.table_of_contents-indent-3 {
+		margin-left: 4.5rem;
+	}
+	
+	.table_of_contents-link {
+		text-decoration: none;
+		opacity: 0.7;
+		border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+	}
+	
+	table,
+	th,
+	td {
+		border: 1px solid rgba(55, 53, 47, 0.09);
+		border-collapse: collapse;
+	}
+	
+	table {
+		border-left: none;
+		border-right: none;
+	}
+	
+	th,
+	td {
+		font-weight: normal;
+		padding: 0.25em 0.5em;
+		line-height: 1.5;
+		min-height: 1.5em;
+		text-align: left;
+	}
+	
+	th {
+		color: rgba(55, 53, 47, 0.6);
+	}
+	
+	ol,
+	ul {
+		margin: 0;
+		margin-block-start: 0.6em;
+		margin-block-end: 0.6em;
+	}
+	
+	li > ol:first-child,
+	li > ul:first-child {
+		margin-block-start: 0.6em;
+	}
+	
+	ul > li {
+		list-style: disc;
+	}
+	
+	ul.to-do-list {
+		text-indent: -1.7em;
+	}
+	
+	ul.to-do-list > li {
+		list-style: none;
+	}
+	
+	.to-do-children-checked {
+		text-decoration: line-through;
+		opacity: 0.375;
+	}
+	
+	ul.toggle > li {
+		list-style: none;
+	}
+	
+	ul {
+		padding-inline-start: 1.7em;
+	}
+	
+	ul > li {
+		padding-left: 0.1em;
+	}
+	
+	ol {
+		padding-inline-start: 1.6em;
+	}
+	
+	ol > li {
+		padding-left: 0.2em;
+	}
+	
+	.mono ol {
+		padding-inline-start: 2em;
+	}
+	
+	.mono ol > li {
+		text-indent: -0.4em;
+	}
+	
+	.toggle {
+		padding-inline-start: 0em;
+		list-style-type: none;
+	}
+	
+	/* Indent toggle children */
+	.toggle > li > details {
+		padding-left: 1.7em;
+	}
+	
+	.toggle > li > details > summary {
+		margin-left: -1.1em;
+	}
+	
+	.selected-value {
+		display: inline-block;
+		padding: 0 0.5em;
+		background: rgba(206, 205, 202, 0.5);
+		border-radius: 3px;
+		margin-right: 0.5em;
+		margin-top: 0.3em;
+		margin-bottom: 0.3em;
+		white-space: nowrap;
+	}
+	
+	.collection-title {
+		display: inline-block;
+		margin-right: 1em;
+	}
+	
+	.simple-table {
+		margin-top: 1em;
+		font-size: 0.875rem;
+	}
+	
+	.simple-table-header {
+		background: rgb(247, 246, 243);
+		color: black;
+		font-weight: 500;
+	}
+	
+	time {
+		opacity: 0.5;
+	}
+	
+	.icon {
+		display: inline-block;
+		max-width: 1.2em;
+		max-height: 1.2em;
+		text-decoration: none;
+		vertical-align: text-bottom;
+		margin-right: 0.5em;
+	}
+	
+	img.icon {
+		border-radius: 3px;
+	}
+	
+	.user-icon {
+		width: 1.5em;
+		height: 1.5em;
+		border-radius: 100%;
+		margin-right: 0.5rem;
+	}
+	
+	.user-icon-inner {
+		font-size: 0.8em;
+	}
+	
+	.text-icon {
+		border: 1px solid #000;
+		text-align: center;
+	}
+	
+	.page-cover-image {
+		display: block;
+		object-fit: cover;
+		width: 100%;
+		max-height: 30vh;
+	}
+	
+	.page-header-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+	
+	.page-header-icon-with-cover {
+		margin-top: -0.72em;
+		margin-left: 0.07em;
+	}
+	
+	.page-header-icon img {
+		border-radius: 3px;
+	}
+	
+	.link-to-page {
+		margin: 1em 0;
+		padding: 0;
+		border: none;
+		font-weight: 500;
+	}
+	
+	p > .user {
+		opacity: 0.5;
+	}
+	
+	td > .user,
+	td > time {
+		white-space: nowrap;
+	}
+	
+	input[type="checkbox"] {
+		transform: scale(1.5);
+		margin-right: 0.6em;
+		vertical-align: middle;
+	}
+	
+	p {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	
+	.image {
+		border: none;
+		margin: 1.5em 0;
+		padding: 0;
+		border-radius: 0;
+		text-align: center;
+	}
+	
+	.code,
+	code {
+		background: rgba(135, 131, 120, 0.15);
+		border-radius: 3px;
+		padding: 0.2em 0.4em;
+		border-radius: 3px;
+		font-size: 85%;
+		tab-size: 2;
+	}
+	
+	code {
+		color: #eb5757;
+	}
+	
+	.code {
+		padding: 1.5em 1em;
+	}
+	
+	.code-wrap {
+		white-space: pre-wrap;
+		word-break: break-all;
+	}
+	
+	.code > code {
+		background: none;
+		padding: 0;
+		font-size: 100%;
+		color: inherit;
+	}
+	
+	blockquote {
+		font-size: 1.25em;
+		margin: 1em 0;
+		padding-left: 1em;
+		border-left: 3px solid rgb(55, 53, 47);
+	}
+	
+	.bookmark {
+		text-decoration: none;
+		max-height: 8em;
+		padding: 0;
+		display: flex;
+		width: 100%;
+		align-items: stretch;
+	}
+	
+	.bookmark-title {
+		font-size: 0.85em;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		height: 1.75em;
+		white-space: nowrap;
+	}
+	
+	.bookmark-text {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.bookmark-info {
+		flex: 4 1 180px;
+		padding: 12px 14px 14px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+	.bookmark-image {
+		width: 33%;
+		flex: 1 1 180px;
+		display: block;
+		position: relative;
+		object-fit: cover;
+		border-radius: 1px;
+	}
+	
+	.bookmark-description {
+		color: rgba(55, 53, 47, 0.6);
+		font-size: 0.75em;
+		overflow: hidden;
+		max-height: 4.5em;
+		word-break: break-word;
+	}
+	
+	.bookmark-href {
+		font-size: 0.75em;
+		margin-top: 0.25em;
+	}
+	
+	.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+	.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+	.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+	.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+	.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+	.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+	.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+	.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+	.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+	.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+	.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+	.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+	.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+	.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+	.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+	.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+	.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+	.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+	.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+	.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+	.highlight-default {
+		color: rgba(55, 53, 47, 1);
+	}
+	.highlight-gray {
+		color: rgba(120, 119, 116, 1);
+		fill: rgba(120, 119, 116, 1);
+	}
+	.highlight-brown {
+		color: rgba(159, 107, 83, 1);
+		fill: rgba(159, 107, 83, 1);
+	}
+	.highlight-orange {
+		color: rgba(217, 115, 13, 1);
+		fill: rgba(217, 115, 13, 1);
+	}
+	.highlight-yellow {
+		color: rgba(203, 145, 47, 1);
+		fill: rgba(203, 145, 47, 1);
+	}
+	.highlight-teal {
+		color: rgba(68, 131, 97, 1);
+		fill: rgba(68, 131, 97, 1);
+	}
+	.highlight-blue {
+		color: rgba(51, 126, 169, 1);
+		fill: rgba(51, 126, 169, 1);
+	}
+	.highlight-purple {
+		color: rgba(144, 101, 176, 1);
+		fill: rgba(144, 101, 176, 1);
+	}
+	.highlight-pink {
+		color: rgba(193, 76, 138, 1);
+		fill: rgba(193, 76, 138, 1);
+	}
+	.highlight-red {
+		color: rgba(212, 76, 71, 1);
+		fill: rgba(212, 76, 71, 1);
+	}
+	.highlight-gray_background {
+		background: rgba(241, 241, 239, 1);
+	}
+	.highlight-brown_background {
+		background: rgba(244, 238, 238, 1);
+	}
+	.highlight-orange_background {
+		background: rgba(251, 236, 221, 1);
+	}
+	.highlight-yellow_background {
+		background: rgba(251, 243, 219, 1);
+	}
+	.highlight-teal_background {
+		background: rgba(237, 243, 236, 1);
+	}
+	.highlight-blue_background {
+		background: rgba(231, 243, 248, 1);
+	}
+	.highlight-purple_background {
+		background: rgba(244, 240, 247, 0.8);
+	}
+	.highlight-pink_background {
+		background: rgba(249, 238, 243, 0.8);
+	}
+	.highlight-red_background {
+		background: rgba(253, 235, 236, 1);
+	}
+	.block-color-default {
+		color: inherit;
+		fill: inherit;
+	}
+	.block-color-gray {
+		color: rgba(120, 119, 116, 1);
+		fill: rgba(120, 119, 116, 1);
+	}
+	.block-color-brown {
+		color: rgba(159, 107, 83, 1);
+		fill: rgba(159, 107, 83, 1);
+	}
+	.block-color-orange {
+		color: rgba(217, 115, 13, 1);
+		fill: rgba(217, 115, 13, 1);
+	}
+	.block-color-yellow {
+		color: rgba(203, 145, 47, 1);
+		fill: rgba(203, 145, 47, 1);
+	}
+	.block-color-teal {
+		color: rgba(68, 131, 97, 1);
+		fill: rgba(68, 131, 97, 1);
+	}
+	.block-color-blue {
+		color: rgba(51, 126, 169, 1);
+		fill: rgba(51, 126, 169, 1);
+	}
+	.block-color-purple {
+		color: rgba(144, 101, 176, 1);
+		fill: rgba(144, 101, 176, 1);
+	}
+	.block-color-pink {
+		color: rgba(193, 76, 138, 1);
+		fill: rgba(193, 76, 138, 1);
+	}
+	.block-color-red {
+		color: rgba(212, 76, 71, 1);
+		fill: rgba(212, 76, 71, 1);
+	}
+	.block-color-gray_background {
+		background: rgba(241, 241, 239, 1);
+	}
+	.block-color-brown_background {
+		background: rgba(244, 238, 238, 1);
+	}
+	.block-color-orange_background {
+		background: rgba(251, 236, 221, 1);
+	}
+	.block-color-yellow_background {
+		background: rgba(251, 243, 219, 1);
+	}
+	.block-color-teal_background {
+		background: rgba(237, 243, 236, 1);
+	}
+	.block-color-blue_background {
+		background: rgba(231, 243, 248, 1);
+	}
+	.block-color-purple_background {
+		background: rgba(244, 240, 247, 0.8);
+	}
+	.block-color-pink_background {
+		background: rgba(249, 238, 243, 0.8);
+	}
+	.block-color-red_background {
+		background: rgba(253, 235, 236, 1);
+	}
+	.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+	.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+	.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+	.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+	.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+	.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+	.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+	.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+	.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+	.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+	
+	.checkbox {
+		display: inline-flex;
+		vertical-align: text-bottom;
+		width: 16;
+		height: 16;
+		background-size: 16px;
+		margin-left: 2px;
+		margin-right: 5px;
+	}
+	
+	.checkbox-on {
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+	}
+	
+	.checkbox-off {
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+	}
+		
+	</style></head><body><article id="5bfc65ee-46f9-497f-a82b-dacf6ae96f66" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🔒</span></div><h1 class="page-title">레티 개인정보 처리방침</h1><table class="properties"><tbody><tr class="property-row property-row-created_time"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesCreatedAt"><path d="M7.01356 14.0001C8.8042 14.0001 10.5958 13.3107 11.9575 11.9324C14.681 9.21201 14.6808 4.7603 11.9571 2.04013C9.23336 -0.680043 4.77573 -0.680043 2.05199 2.04013C0.727519 3.36277 0 5.13301 0 6.99553C0 8.8764 0.727811 10.6285 2.05199 11.9509C3.43207 13.3106 5.22243 14.0001 7.01356 14.0001ZM3.72947 7.00914V8.461V8.65543H3.92382H5.34563H8.2794H8.4738V8.461V5.52541V3.37947V3.18502H8.2794H6.82747H6.63307V3.37947V6.81467H3.92382H3.72947V7.00914ZM1.83985 6.99553C1.83985 5.61698 2.38099 4.32597 3.36061 3.3477C5.36746 1.34337 8.64803 1.34062 10.6585 3.33944C10.6613 3.34219 10.6639 3.34494 10.6668 3.3477C12.676 5.3546 12.6763 8.63642 10.6668 10.6434C8.65705 12.6504 5.37031 12.6504 3.36061 10.6434C2.38099 9.66506 1.83985 8.37408 1.83985 6.99553Z"></path></svg></span>Created</th><td><time>@February 24, 2022 7:13 PM</time></td></tr><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesMultipleSelect"><path d="M4,3 C4,2.447715 4.447715,2 5,2 L12,2 C12.5523,2 13,2.447716 13,3 C13,3.55228 12.5523,4 12,4 L5,4 C4.447715,4 4,3.55228 4,3 Z M4,7 C4,6.447715 4.447715,6 5,6 L12,6 C12.5523,6 13,6.447716 13,7 C13,7.55228 12.5523,8 12,8 L5,8 C4.447715,8 4,7.55228 4,7 Z M4,11 C4,10.447715 4.447715,10 5,10 L12,10 C12.5523,10 13,10.447716 13,11 C13,11.55228 12.5523,12 12,12 L5,12 C4.447715,12 4,11.55228 4,11 Z M2,4 C1.44771525,4 1,3.55228475 1,3 C1,2.44771525 1.44771525,2 2,2 C2.55228475,2 3,2.44771525 3,3 C3,3.55228475 2.55228475,4 2,4 Z M2,8 C1.44771525,8 1,7.55228475 1,7 C1,6.44771525 1.44771525,6 2,6 C2.55228475,6 3,6.44771525 3,7 C3,7.55228475 2.55228475,8 2,8 Z M2,12 C1.44771525,12 1,11.5522847 1,11 C1,10.4477153 1.44771525,10 2,10 C2.55228475,10 3,10.4477153 3,11 C3,11.5522847 2.55228475,12 2,12 Z"></path></svg></span>Tags</th><td></td></tr></tbody></table></header><div class="page-body"><h2 id="cab97295-e1d2-4572-8550-395279b6b213" class="">&#x27;레티&#x27; 개인정보처리방침</h2><p id="96ec3a87-f074-4c86-a39e-e5a960dc6389" class="">
+	</p><p id="15241183-245b-4981-a4c8-9ff236687ac9" class="">&#x27;레티&#x27;(이하 &quot;회사&quot;)는 개인정보 보호법 제30조에 따라 정보주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 개인정보 처리방침을 수립 및 공개합니다. </p><p id="1744e51c-537d-4e8b-8a8f-3bf9bae7bd4c" class="">회사가 이용자에게 제공하는 서비스가 수행하는 모든 활동은 정보통신망 이용촉진 및 정보보호(이하 &quot;정보통신망법&quot;), 개인정보보호법, 등 개인정보 보호에 관한 관련 법령 등 국내 관련 법령을 준수하며, 본 개인정보 처리방침을 따릅니다. </p><p id="62149343-5e41-466a-906d-9271c22b971b" class="">
+	</p><p id="a1d11417-a5f9-44ec-9cd6-b55b22cc4a40" class=""><strong>제 1조 (개인정보의 수집 항목 및 이용 목적)</strong></p><p id="8247c65f-c940-478d-8774-98c75631daba" class="">회사는 편리한 서비스를 제공하기 위하여 통신비밀보호법, 전기통신사업법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 정보통신서비스제공자가 준수하여야 할 관련 법령상의 개인정보보호 규적을 준수하며, 관련 법령에 의거한 개인정보취급방침을 정하여 이용자 권익보호에 최선을 다하고 있습니다. 회사에서 수집하고 있는 항목과 이용 목적은 다음과 같습니다. </p><ul id="5b5b323f-27ec-4687-a80d-248e4036843e" class="bulleted-list"><li style="list-style-type:disc">서비스 이용을 위해 수집하는 개인정보의 항목<ul id="278c7429-70b9-44b7-8ad9-688b18ac6335" class="bulleted-list"><li style="list-style-type:circle">닉네임, Gmail 주소, 서비스 이용 기록, 접속 로그, 쿠키, 접속 IP 정보</li></ul></li></ul><ul id="c1821f51-8de0-4eea-912c-f7518c1dda39" class="bulleted-list"><li style="list-style-type:disc">개인정보 이용 목적<ul id="a6acb0f6-61d5-45c3-953b-a4915ec33db1" class="bulleted-list"><li style="list-style-type:circle">서비스 회원 가입 및 관리</li></ul><ul id="ce4cd123-2590-49f4-a5c6-9570ae1ec8ac" class="bulleted-list"><li style="list-style-type:circle">원활한 이메일 관련 서비스 제공 </li></ul></li></ul><p id="3dab162e-b386-4ab6-8260-b07a3d5b9a34" class="">
+	</p><p id="28ae38f5-cd1c-4cde-baea-4191da89fbd6" class=""><strong>제 2조 (개인정보의 수집 방법)</strong></p><p id="e9f5018c-4203-45f4-88bc-609233f83312" class="">회사는 원활한 서비스 제공을 위해 모바일 앱을 통해 다음과 같은 방법으로 개인정보를 수집합니다. </p><ul id="7f1d5855-749c-4e61-bc86-1844cfe14457" class="bulleted-list"><li style="list-style-type:disc">최초 이용 시 이름(닉네임) 설정 </li></ul><ul id="9df6de40-f212-4e6d-ab9a-6a6465277243" class="bulleted-list"><li style="list-style-type:disc">회원 가입 시 이메일 연동 </li></ul><p id="941018c5-d9d2-4fcf-9328-995f0d7c97ad" class="">
+	</p><p id="ece34519-e9d1-48cc-acfd-9d6a3dc555c7" class=""><strong>제 3조 (개인정보의 활용) </strong></p><p id="0d31ee17-fa91-4ae1-add5-8fb7ee570bc5" class="">회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다. </p><ul id="3d4ba43e-82e7-4b97-b82d-19599b15e83c" class="bulleted-list"><li style="list-style-type:disc">회원제 서비스 이용에 따른 본인확인, 개인 식별, 가입 의사 확인, 불만처리 등 민원처리, 고지사항 전달 </li></ul><p id="b70524ef-34f0-46b2-be86-11a3b55fae9c" class="">
+	</p><p id="e722a485-7405-4438-afe7-46ac5a16ee9b" class=""><strong>제 4조 (개인정보의 보유 및 이용기간) </strong></p><p id="52c57a63-8fb8-4472-aa44-4344add477d3" class="">회사는 법령에 따른 개인정보 보유/이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의받은 개인정보 보유/이용기간 내에서 개인정보를 처리/보유합니다. 또한 회원 탈퇴 시 지체 없이 파기합니다. 단, 회원탈퇴 후에도 관계법령의 규정에 의하여 보존할 필요가 있는 경우 법령에 따라 일정기간 회원정보를 보관합니다.</p><ul id="351f1b60-a25b-402c-84c5-7fe24ed6b6b8" class="bulleted-list"><li style="list-style-type:disc">ID,비밀번호,이메일,서비스이용기록,접속로그,쿠키,접속IP정보<ul id="8dd88374-a108-46ad-a695-bb61955084f0" class="bulleted-list"><li style="list-style-type:circle">보존 이유 : 전자상거래등에서의 소비자보호에 관한 법률</li></ul><ul id="8e06f565-d6ef-481e-a15d-8ab194c1c21e" class="bulleted-list"><li style="list-style-type:circle">보존 기간 : 5년</li></ul></li></ul><ul id="cb897fd3-7751-47f2-aea4-84d0d8c4d6d8" class="bulleted-list"><li style="list-style-type:disc">소비자의 불만 또는 분쟁처리에 관한 기록<ul id="5627d6ad-37bd-4b4d-beca-dda97d7388f0" class="bulleted-list"><li style="list-style-type:circle">보존 이유 : 전자상거래등에서의 소비자보호에 관한 법률</li></ul><ul id="2b20f4a8-ebb1-47ee-b53d-6de54b993fb0" class="bulleted-list"><li style="list-style-type:circle">보존 기간 : 3년</li></ul></li></ul><ul id="1ea67fbd-5e96-4c92-b400-9c424cee0a2f" class="bulleted-list"><li style="list-style-type:disc">방문에 관한 기록<ul id="dfef4599-7ffc-4321-9fc7-7b40106bc683" class="bulleted-list"><li style="list-style-type:circle">보존 이유 : 통신비밀보호법</li></ul><ul id="43991770-8461-4f0f-bb30-e62ee0c2dbc6" class="bulleted-list"><li style="list-style-type:circle">보존 기간 : 3개월</li></ul></li></ul><p id="1380b35f-10c1-4845-b5ce-3c61aed40c75" class="">
+	</p><p id="056f069d-0b12-482e-9078-706f6cab2269" class=""><strong>제 5조 (개인정보의 파기절차 및 방법)</strong></p><p id="28c13837-b25b-4f48-9411-33d841b1e64f" class="">회사는 이용자의 개인정보를 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기합니다. 개인정보 파기절차 및 방법은 다음과 같습니다. </p><ol type="1" id="dc78d700-5401-44ab-9d17-cef3b37f1329" class="numbered-list" start="1"><li>파기절차 <ul id="37b971da-646e-46d3-8ee4-ee38594223b3" class="bulleted-list"><li style="list-style-type:disc">이용자가 회원가입 등을 위해 입력하신 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관계법령의 규정에 의하여 보존할 필요가 있는 경우 법령에 따라 일정기간 회원정보를 보관합니다. </li></ul><ul id="f7bf15e4-5d75-4676-92c3-96f9118cb7da" class="bulleted-list"><li style="list-style-type:disc">동 개인정보는 법률에 의한 경우가 아니고서는 보유되는 이외의 다른 목적으로 이용되지 않습니다. </li></ul></li></ol><ol type="1" id="362450dc-04f1-4aa6-acac-b6976ebbf41d" class="numbered-list" start="2"><li>파기방법 </li></ol><ul id="59f835b4-29c6-44fd-9cb7-24104f42b285" class="bulleted-list"><li style="list-style-type:disc">종이에 출력된 개인정보는 분쇄기 또는 이에 준하는 방법으로 소각하여 파기합니다. </li></ul><ul id="1366d6a0-ec4c-4ed0-817c-4b6adcd232fc" class="bulleted-list"><li style="list-style-type:disc">전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다. </li></ul><p id="86b2b461-7079-47ee-9b41-3382bf4c0f80" class="">
+	</p><p id="6b941504-147a-415b-8a49-8ad0973cea32" class=""><strong>제 6조 (개인정보관리책임자 및 담당자의 연락처) </strong></p><p id="09c4f9be-3dba-407d-a9eb-807654ee149f" class="">회사는 개인정보를 보호하는데 있어 이용자에게 고지한 사항들에 반하여 사고가 발생할 시에 개인정보보호책임자가 모든 책임을 집니다. 그러나, 기술적인 보완조치를 했음에도 불구하고, 해킹 등 기본적인 네트워크 상의 위험성에 의해 발생하는 예기치 못한 사고로 인한 정보의 훼손 및 방문자가 작성한 게시물에 의한 각종 분쟁에 관해서는 책임이 없습니다. </p><p id="b036a087-8c61-46ea-a4d4-974324992c0c" class="">회사는 서비스를 이용하며 발생하는 모든 개인정보보호 관련 민원을 개인정보 관리책임자 혹은 담당부서로 신고하실 수 있습니다. 회사는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다. </p><ul id="c323854a-7b2f-4471-82cc-0d60cc2a2289" class="bulleted-list"><li style="list-style-type:disc">개인정보 보호책임자<ul id="85bff047-c85a-4e68-836a-924f039ba531" class="bulleted-list"><li style="list-style-type:circle">성명: 이은정</li></ul><ul id="e481c0d4-2778-4ae7-b573-89623439531d" class="bulleted-list"><li style="list-style-type:circle">연락처: leeeun0704@gmail.com</li></ul><p id="b97f90ab-74ed-46d0-bd2a-1aafb2bf64d8" class="">
+	</p></li></ul><p id="3a352016-1d9f-49ac-a642-55ed2d91b44e" class=""><strong>제7조 (고지의 의무) </strong></p><p id="6b4c3756-b51b-4d6f-8a2f-324c978e4484" class="">본 방침은 공지한 날로부터 시행되며, 정부나 회사의 정책이 변경됨에 따라 현 개인정보취급방침의 내용 추가, 삭제가 있을 시에는 시행일자 최소 7일전부터 홈페이지를 통해 공고할 것입니다. </p><p id="227de4e0-dc5a-4214-8553-6cd345bbd79d" class="">
+	</p><p id="f4bb16a3-09ce-4162-b94c-6e283284c90e" class=""><strong>제 8조 (Google API 서비스 사용자 데이터 정책) </strong></p><p id="bc129687-0d8e-4ff8-bdf4-1ba80f1c75d0" class="">회사는 Google API에서 받은 정보를 사용하는 경우 제한적 사용 요구 사항을 포함하여 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 준수합니다. </p><p id="ac75ab60-e899-415e-b41b-e3ca1e13fa56" class="">
+	</p><p id="1e25d51f-7c9a-49de-96ae-55a15bbea11a" class="">
+	</p><hr id="52fef026-5368-4b83-b6d8-ea469f535c56"/><p id="8d296eb3-8a62-4755-985d-576a62c13bb1" class="">
+	</p><p id="80c42db0-a190-4e36-8bff-42cf3b5e704e" class="">
+	</p></div></article></body></html>
